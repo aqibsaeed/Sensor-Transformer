@@ -20,7 +20,8 @@ parser.add_argument("--num_channels", type=int)
 parser.add_argument("--num_classes", type=int)
 args = parser.parse_args()
 
-"""TF-Data objects, see data.load_data function.
+"""
+TF-Data objects, see data.load_data function.
 Instances must be of shape x = (batch, signal_length, num_channels)
 y = (batch, num_classes)
 """
