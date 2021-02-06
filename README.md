@@ -1,4 +1,4 @@
-## Sensor Transformer
+## Sensor Transformer (SeT)
 Adaptation of <a href="https://arxiv.org/pdf/2010.11929.pdf">Vision Transformer (ViT)</a> for Time-Series and Sensor Data in Tensorflow. 
 
 #### Tools
