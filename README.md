@@ -1,6 +1,11 @@
 ## Sensor Transformer (SeT)
 Adaptation of <a href="https://arxiv.org/pdf/2010.11929.pdf">Vision Transformer (ViT)</a> for Time-Series and Sensor Data in Tensorflow. 
 
+#### Problems/Datasets
+* <a href="https://archive.ics.uci.edu/ml/datasets/heterogeneity+activity+recognition">Human Activity Recognition with Wearable Device</a>
+* <a href="https://www.isip.piconepress.com/projects/tuh_eeg/">Seizure Detection</a>
+* <a href="https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/">Predictive Maintenance</a>
+
 #### Tools
 
 * <a href="https://www.tensorflow.org/">Tensorflow 2.4</a>
