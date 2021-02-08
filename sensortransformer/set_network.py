@@ -1,4 +1,5 @@
 """ Adapted from: https://github.com/lucidrains/vit-pytorch/tree/main/vit_pytorch """
+
 import tensorflow as tf
 from einops.layers.tensorflow import Rearrange
 

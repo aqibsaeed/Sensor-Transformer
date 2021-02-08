@@ -1,7 +1,7 @@
 import argparse
 import numpy as np
 import tensorflow as tf
-import transformer
+from sensortransformer import set_network
 from data import load_data
 
 parser = argparse.ArgumentParser()
@@ -22,7 +22,7 @@ args = parser.parse_args()
 
 if __name__ == "__main__":
     ds_train, ds_test = load_data(args.batch_size) 
-    model = transformer.SensorTransformer(
+    model = set_network.SensorTransformer(
         signal_length=args.signal_length,
         segment_size=args.segment_size,
         channels=args.num_channels,

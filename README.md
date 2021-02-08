@@ -11,12 +11,18 @@ Adaptation of <a href="https://arxiv.org/pdf/2010.11929.pdf">Vision Transformer 
 * <a href="https://www.tensorflow.org/">Tensorflow 2.4</a>
 * <a href="https://github.com/arogozhnikov/einops">einops</a>
 
+#### Install
+
+```
+pip install sensortransformer
+```
+
 #### Usage
 
 ```python
 import argparse
 import tensorflow as tf
-import transformer
+from sensortransformer import set_network
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--signal-length", type=int)
@@ -32,7 +38,7 @@ y = (batch, num_classes)
 """
 ds_train, ds_test = ...
 
-model = transformer.SensorTransformer(
+model = set_network.SensorTransformer(
         signal_length=args.signal_length,
         segment_size=args.segment_size,
         channels=args.num_channels,
